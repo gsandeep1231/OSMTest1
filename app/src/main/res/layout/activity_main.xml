@@ -28,6 +28,37 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="centerCurrentLocation" />
+        android:onClick="centerCurrentLocation"
+        android:id="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Distance from WF"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="false"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Distance for SB"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Azimuth"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
 
 </RelativeLayout>
